@@ -34,3 +34,7 @@ def solution(number, k):
     
     return (max(num_set))
 
+#해당 문제 풀이 위해 스택 이용함
+#스택이란? 먼저 들어온 데이터가 나중에 나가는 형식, 파이썬에서는 리스트로(append, pop)구현
+#입구와 출구가 동일한 형태
+print('hello')
