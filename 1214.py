@@ -18,5 +18,19 @@ def solution(n, lost, reserve):
     return cnt
 
 #프로그래머스 체육복 문제 남의 풀이
-for size in [0,1,-2]:
-    print(size)
+
+
+
+#프로그래머스 큰 수 만들기
+from itertools import combinations
+def solution(number, k):
+    make_c = list(combinations(number, len(number)-k))
+    num_list = []
+    for i in make_c:
+        str = ''.join(i)
+        num_list.append(str)
+    
+    num_set = set(num_list)
+    
+    return (max(num_set))
+
