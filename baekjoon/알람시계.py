@@ -1,9 +1,15 @@
+
 h,m = map(int, input().split())
-print(h, m)
 
-# new_m = 60-m
-# if h == 0:
-#     new_h = 23
-# new_h = h-1
+if m < 45:
+    m += 60-45
+    if h == 0:
+        h = 23
+    else:
+        h -= 1
+else:
+    m -= 45
+print(h,m)
 
-# print(new_h, new_m)
+
+
