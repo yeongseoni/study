@@ -18,3 +18,4 @@ def solution(n, lost, reserve):
     return cnt
 
 #프로그래머스 체육복 문제 남의 풀이
+#set 하면 알아서 정렬도 해준다.. sort 자동
