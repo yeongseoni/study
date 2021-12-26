@@ -203,3 +203,13 @@ print()
 print("미로문제")
 
 #미로문제
+
+def miro(arr, n, m):
+    pass
+
+
+arr = [[1,0,1],
+        [1,1,1],
+        [0,0,1]]
+
+print(arr)
