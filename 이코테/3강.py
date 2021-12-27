@@ -211,5 +211,8 @@ def miro(arr, n, m):
 arr = [[1,0,1],
         [1,1,1],
         [0,0,1]]
-
-print(arr)
+c = []
+for i in arr:
+    for j in i:
+        c.append(False)
+print(c)
