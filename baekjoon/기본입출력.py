@@ -55,4 +55,8 @@ for i in range(n):
 for i in range(n-2,-1,-1):
     print(' '*i + '*'*((n-i)*2-1))
 
-
+#11721
+#못풀었음
+word = input()  #그냥 문자열로 받아줌
+for i in range(0,len(word),10):
+    print(word[i:i+10])
