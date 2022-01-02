@@ -61,7 +61,20 @@
 #   print(cnt)
     
 #답지
-n,m = map(int, input().split())
-print(n)
-a,b = int(input.split())
-print(a)
+# n,m = map(int, input().split())
+
+# num = []
+# for i in range(n):
+#     num.append(int(input()))
+
+# arr = [10001]*(m+1)
+# arr[0] = 0
+# for i in range(n):
+#     for j in range(2,m+1):
+#         if arr[j - num[i]] != 10001:
+#             arr[j] = min(arr[j], arr[j - num[i]]+1)
+
+# if arr[n] == 10001:
+#     print(-1)
+# else:
+#     print(arr[m])
