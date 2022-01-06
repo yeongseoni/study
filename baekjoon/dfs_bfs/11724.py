@@ -75,7 +75,5 @@
 #         dfs(graph, i, visited)
 
 # print(cnt)
-
-import sys 
-n,m = map(int, sys.stdin.readlines().split())
-print(n,m)
+a=1
+print(a)
