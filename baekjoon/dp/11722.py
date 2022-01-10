@@ -7,14 +7,13 @@
 # print(len(s))
 
 
+
 n = int(input())
-# A = list(map(int, input().split()))
-A = [10,30,10,20,20,10]
+A = list(map(int, input().split()))
 dp = [1 for _ in range(n)]
 
 for i in range(1,n):
     for j in range(i):
-        if A[i] > A[j]:
-            dp[i] = max(dp[i], dp[j]+dp[i])
+        if A[i] < A[j]:
+            dp[i] = max(dp[i], dp[j] + 1)
 print(max(dp))
-
