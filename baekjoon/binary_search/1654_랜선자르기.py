@@ -69,12 +69,8 @@ result=0
 while (start <= end):
     total = 0
     mid = (start+end)//2 #다른 부분이라면 나눈걸로 해서 개수 구하는거
-    print(f'start:{start}, mid:{mid}, end:{end}')
     for i in arr:
         total += i//mid
-        print()
-        print(f'total:{total}')
-        print()
     if total < N:
         end = mid-1
     else:
@@ -82,3 +78,4 @@ while (start <= end):
         start = mid+1
     
 print(result)
+
