@@ -52,5 +52,45 @@ for i in card:
     start = 0
     end = len(origin)-1 #start=0으로 해줬기때문에 -1해줘야함
     print(binary_search(start, i ,end),end=' ')
-    
+
+
+
+
+
+
+
+
+
+
+#다시 풀어봤는데 못풀었음
+#로직 이해했다고 생각했는데 아니었음
+#일단 반복문에 탈출하는 조건이 없었다
+#start>end 이면 안도ㅑ
+# import sys
+# input = sys.stdin.readline
+# M = int(input())
+# card = list(map(int, input().split()))
+# N = int(input())
+# new = list(map(int, input().split()))
+# card.sort()
+
+# start = 0
+# end = M-1
+# def binary_code(start, end, target):
+#     while start <= end:
+#         mid = (start + end)//2
+        
+#         if target == card[mid]:
+#             target = 1
+#         elif target > card[mid]:
+#             start = mid + 1
+#         else:
+#             end = mid - 1
+#     target = 0    #왜 리턴이 아니라 타켓으로 주면 답이 달라질까?
+#     print(target) 
+
+# for i in new:
+#     binary_code(start, end, i)
+
+        
     
