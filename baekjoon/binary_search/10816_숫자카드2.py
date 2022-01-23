@@ -141,3 +141,17 @@ for i in new:
 # for i in new:
 #     print(i)
 #     print(card.count(i), end= ' ')
+
+#counter 쓰는거 편한듯?
+# 3
+# from collections import Counter
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# n_num = list(map(int, input().split()))
+# m = int(input())
+# m_num = list(map(int, input().split()))
+# n_num = Counter(n_num)
+# for i in m_num:
+#      print(n_num[i], end=" ")
+

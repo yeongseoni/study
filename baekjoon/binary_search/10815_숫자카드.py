@@ -28,30 +28,30 @@
 # print(card)
 
 #답지를 보았는데 매우 간단해서 슬프다
-import sys
-input = sys.stdin.readline
-N = int(input())
-origin = list(map(int, input().split()))
-origin.sort()
-M = int(input())
-card = list(map(int, input().split()))
+# import sys
+# input = sys.stdin.readline
+# N = int(input())
+# origin = list(map(int, input().split()))
+# origin.sort()
+# M = int(input())
+# card = list(map(int, input().split()))
 
 
-def binary_search(start, target, end):
-    while start <= end:
-        mid = (start+end)//2
-        if target == origin[mid]:
-            return 1
-        elif target > origin[mid]:
-            start = mid+1
-        else:
-            end = mid-1
-    return 0 #if문에 해당하는게 없고 종료되면 0을 반환한다인가? 자리를 밖으로 나가니까 답이 나옴
+# def binary_search(start, target, end):
+#     while start <= end:
+#         mid = (start+end)//2
+#         if target == origin[mid]:
+#             return 1
+#         elif target > origin[mid]:
+#             start = mid+1
+#         else:
+#             end = mid-1
+#     return 0 #if문에 해당하는게 없고 종료되면 0을 반환한다인가? 자리를 밖으로 나가니까 답이 나옴
 
-for i in card:
-    start = 0
-    end = len(origin)-1 #start=0으로 해줬기때문에 -1해줘야함
-    print(binary_search(start, i ,end),end=' ')
+# for i in card:
+#     start = 0
+#     end = len(origin)-1 #start=0으로 해줬기때문에 -1해줘야함
+#     print(binary_search(start, i ,end),end=' ')
 
 
 
@@ -82,12 +82,14 @@ for i in card:
         
 #         if target == card[mid]:
 #             target = 1
+#             print(target, end=' ')
+#             break
 #         elif target > card[mid]:
 #             start = mid + 1
 #         else:
 #             end = mid - 1
-#     target = 0    #왜 리턴이 아니라 타켓으로 주면 답이 달라질까?
-#     print(target) 
+#     target = 0    #왜 리턴이 아니라 타켓으로 주면 답이 달라질까? #return은 반환해서 그 밑을 안하니까!!!!!!!!!!!!
+#     print(target, end=' ') 
 
 # for i in new:
 #     binary_code(start, end, i)
